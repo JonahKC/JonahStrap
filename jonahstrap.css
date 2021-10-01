@@ -123,7 +123,7 @@ input[type=button], input[type=submit], input[type=reset] {
   height: 1rem;
 }
 /* Makes a fancy hr element line 100% of the screen width */
-.wideline {
+.largeline {
   background-color: var(--primary);
   border-color: transparent;
   border-radius: 4px;
@@ -133,13 +133,23 @@ input[type=button], input[type=submit], input[type=reset] {
   height: 2px;
 }
 /* Makes a fancy hr element line 75% of the screen width */
-.thinline {
+.midline {
   background-color: var(--primary);
   border-color: transparent;
   border-radius: 4px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 75%;
+  width: 50%;
+  height: 2px;
+}
+/* Makes a fancy hr element line 75% of the screen width */
+.smallline {
+  background-color: var(--primary);
+  border-color: transparent;
+  border-radius: 4px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 33%;
   height: 2px;
 }
 /* Makes text 3x size */
