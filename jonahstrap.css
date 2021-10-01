@@ -1,6 +1,14 @@
 /* ■ ■ Font ■ ■ */
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* ■ ■ Variables ■ ■ */
+
+:root {
+  --primary: #ff6600;
+  --secondary: #ffc996;
+	--background: #ff7d32;
+	--text: #000000;
+}
 
 /* ■ ■ Tag CSS ■ ■ */
 
@@ -9,13 +17,13 @@ html {
   font-family: 'Nunito', sans-serif;
   margin-left: 25px;
   margin-right: 25px;
-  background-color: #ff7d32;
-  color:#000000;
+  background-color: var(--background);
+  color: var(--text);
 }
 /* Underlines and makes links the same color as normal text */
 a {
   text-decoration: underline;
-  color: #000000;
+  color: var(--text);
 }
 /* Makes images undraggable and unselectable */
 img {
@@ -37,33 +45,35 @@ footer {
 }
 /* Colors buttons and gives them padding and margins */
 button {
-  background-color: #ffc996;
-  border: 3px solid #ff6600;
-  color: #000000;
+  background-color: var(--secondary);
+  border: 3px solid var(--primary);
+  color: var(--text);
   border-radius: 4px;
   padding: 5px 15px;
   text-decoration: none;
   margin: 4px 2px;
 }
-
+.button:hover {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
 /* ■ ■ Forms ■ ■ */
 
 /* Text input */
 input[type=text] {
-  border: 3px solid #ff6600;
+  border: 3px solid var(--primary);
   border-radius: 4px;
 }
 /* Email input */
 input[type=email] {
-  border: 3px solid #ff6600;
+  border: 3px solid var(--primary);
   border-radius: 4px;
 }
 /* Submit button inputs */
 input[type=button], input[type=submit], input[type=reset] {
-  background-color: #ffc996;
-  border: 3px solid #ff6600;
+  background-color: var(--secondary);
+  border: 3px solid var(--primary);
   border-radius: 4px;
-  color: black;
+  color: var(--text);
   padding: 5px 15px;
   text-decoration: none;
   margin: 4px 2px;
@@ -113,7 +123,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 /* Makes a fancy hr element line 100% of the screen width */
 .wideline {
-  background-color: #ff6600;
+  background-color: var(--primary);
   border-color: transparent;
   border-radius: 4px;
   margin-top: 1rem;
@@ -123,7 +133,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 /* Makes a fancy hr element line 75% of the screen width */
 .thinline {
-  background-color: #ff6600;
+  background-color: var(--primary);
   border-color: transparent;
   border-radius: 4px;
   margin-top: 1rem;
@@ -143,7 +153,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 /* Gives content an accented background color and some padding, and centers everything inside */
 .highlight {
-  background-color: #ffc996;
+  background-color: var(--secondary);
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
@@ -156,7 +166,7 @@ input[type=button], input[type=submit], input[type=reset] {
   display: inline-block;
   width: 50%;
   text-align: left;
-  border: #000 2px solid;
+  border: #000000 2px solid;
   border-radius: 5px;
   padding: 2%;
 }
@@ -294,4 +304,3 @@ input[type=button], input[type=submit], input[type=reset] {
     height: auto;
   }
 }
-
