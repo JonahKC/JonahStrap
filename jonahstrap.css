@@ -1,0 +1,287 @@
+/* ■ ■ Font ■ ■ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* ■ ■ Tag CSS ■ ■ */
+
+/* Font, margins, background and text color */
+html {
+  font-family: 'Nunito', sans-serif;
+  margin-left: 25px;
+  margin-right: 25px;
+	background-color: #ff7d32;
+	color:#000000;
+}
+/* Underlines and makes links the same color as normal text */
+a {
+  text-decoration: underline;
+	color: #000000;
+}
+/* Makes images undraggable and unselectable */
+img {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+/* Adds wider margins, centers and shrinks text */
+footer {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: .75rem;
+}
+/* Colors buttons and gives them padding and margins */
+button {
+  background-color: #ffc996;
+  border: 3px solid #ff6600;
+	color: #000000;
+  border-radius: 4px;
+  padding: 5px 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+/* ■ ■ Forms and Buttons ■ ■ */
+
+/* Text input */
+input[type=text] {
+  border: 3px solid #ff6600;
+  border-radius: 4px;
+}
+/* Email input */
+input[type=email] {
+  border: 3px solid #ff6600;
+  border-radius: 4px;
+}
+/* Submit button inputs */
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #ffc996;
+  border: 3px solid #ff6600;
+  border-radius: 4px;
+  color: black;
+  padding: 5px 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+
+}
+
+/* ■ ■ Fancy Classes ■ ■ */
+
+/* Centers content */
+.center {
+  text-align: center;
+}
+/* Vertically and horizontally centers content, flexing left to right */
+.vertcenter-side {
+	display: flex;
+  align-items: center;
+	justify-content: center;
+}
+/* Vertically and horizontally centers content, flexing top to bottom */
+.vertcenter-up {
+	display: flex;
+  align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+/* Centers content with margins */
+.margin-centered{
+	margin-left: auto; margin-right: auto;
+}
+/* Makes clear hr element */
+.space {
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 1rem;
+}
+/* Makes clear HR element that disappears on mobile */
+.phonespace {
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 1rem;
+}
+/* Makes a fancy hr element line */
+.wideline {
+  background-color: #ff6600;
+  border-color: transparent;
+  border-radius: 4px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 2px;
+}
+/* Makes text 3x size */
+.title {
+  text-decoration: none;
+  font-size: 3rem;
+}
+/* Makes text 2x size */
+.subtitle {
+  text-decoration: none;
+  font-size: 2rem;
+}
+/* Gives content an accented background color and some padding, and centers everything inside */
+.highlight {
+  background-color: #ffc996;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+/* Puts content in a nice little rounded box with a black border */
+.box {
+  word-break: break-all;
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+	border: #000 2px solid;
+	border-radius: 5px;
+	padding: 2%;
+}
+/* Removes all text decoration */
+.nodeco {
+	text-decoration: none !important;
+	list-style: none;
+}
+/* Makes text align right */
+.right {
+	text-align: right;
+}
+
+/* ■ ■ Responsive CSS ■ ■ */
+
+@media screen and (max-width: 600px) {
+  .cornertitle {
+    width: 100%;
+    text-align: center;
+		text-decoration: none;
+  }
+  .phonespace {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    width: 1%;
+    height: 0rem;
+  }
+	.highlight {
+  	padding-left: 5px;
+  	padding-right: 5px;
+  	padding-top: 15px;
+  	padding-bottom: 15px;
+  	text-align: center;
+	}
+	.box {
+  word-break: break-all;
+	width: 90%;
+	}
+}
+
+/* ■ ■ Title Bar ■ ■ */
+
+/* .toptitle and .topbutton go inside .topbar */
+
+/* Clears floats after .topbar */
+.topbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Puts your title in the top left corner */
+.toptitle {
+  float: left;
+  width: 50%;
+}
+/* Puts content opposite to your title */
+.topbutton {
+  float: right;
+  text-align: right;
+	text-decoration: none;
+  width: 50%;
+  padding-top: 10px;
+}
+
+/* ■ ■ Responsive Title Bar ■ ■ */
+
+@media screen and (max-width: 600px) {
+  .toptitle {
+    width: 100%;
+    text-align: center;
+  }
+  .topbutton {
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+  }
+}
+
+/* ■ ■ Columns ■ ■ */
+
+/* All .column-# go inside .row */
+
+/* Clears floats after .topbar */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Two columns */
+.column-2 {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* Three columns */
+.column-3{
+	float: left;
+  width: 32%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* Four columns */
+.column-4{
+	float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+/*  ■ ■ Responsive Columns ■ ■ */
+@media screen and (max-width: 600px) {
+	.row {
+    display: block !important;
+	}
+  .column-2 {
+    width: 100%;
+    padding: 0px 0;
+    display: block !important;
+		height: auto;
+  }
+	.column-3 {
+    width: 100%;
+    padding: 0px 0;
+    display: block !important;
+		height: auto;
+	}
+	.column-4 {
+    width: 100%;
+    padding: 0px 0;
+    display: block !important;
+		height: auto;
+  }
+}
+
