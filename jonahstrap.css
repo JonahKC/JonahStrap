@@ -54,7 +54,8 @@ button {
   margin: 4px 2px;
 }
 .button:hover {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  background-color: var(--primary);
+	transition: .5s;
 }
 /* ■ ■ Forms ■ ■ */
 
