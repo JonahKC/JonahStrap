@@ -9,13 +9,13 @@ html {
   font-family: 'Nunito', sans-serif;
   margin-left: 25px;
   margin-right: 25px;
-	background-color: #ff7d32;
-	color:#000000;
+  background-color: #ff7d32;
+  color:#000000;
 }
 /* Underlines and makes links the same color as normal text */
 a {
   text-decoration: underline;
-	color: #000000;
+  color: #000000;
 }
 /* Makes images undraggable and unselectable */
 img {
@@ -39,14 +39,14 @@ footer {
 button {
   background-color: #ffc996;
   border: 3px solid #ff6600;
-	color: #000000;
+  color: #000000;
   border-radius: 4px;
   padding: 5px 15px;
   text-decoration: none;
   margin: 4px 2px;
 }
 
-/* ■ ■ Forms and Buttons ■ ■ */
+/* ■ ■ Forms ■ ■ */
 
 /* Text input */
 input[type=text] {
@@ -78,20 +78,20 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 /* Vertically and horizontally centers content, flexing left to right */
 .vertcenter-side {
-	display: flex;
+  display: flex;
   align-items: center;
-	justify-content: center;
+  justify-content: center;
 }
 /* Vertically and horizontally centers content, flexing top to bottom */
 .vertcenter-up {
-	display: flex;
+  display: flex;
   align-items: center;
-	justify-content: center;
-	flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 /* Centers content with margins */
 .margin-centered{
-	margin-left: auto; margin-right: auto;
+  margin-left: auto; margin-right: auto;
 }
 /* Makes clear hr element */
 .space {
@@ -111,7 +111,7 @@ input[type=button], input[type=submit], input[type=reset] {
   width: 100%;
   height: 1rem;
 }
-/* Makes a fancy hr element line */
+/* Makes a fancy hr element line 100% of the screen width */
 .wideline {
   background-color: #ff6600;
   border-color: transparent;
@@ -119,6 +119,16 @@ input[type=button], input[type=submit], input[type=reset] {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
+  height: 2px;
+}
+/* Makes a fancy hr element line 75% of the screen width */
+.thinline {
+  background-color: #ff6600;
+  border-color: transparent;
+  border-radius: 4px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 75%;
   height: 2px;
 }
 /* Makes text 3x size */
@@ -143,21 +153,21 @@ input[type=button], input[type=submit], input[type=reset] {
 /* Puts content in a nice little rounded box with a black border */
 .box {
   word-break: break-all;
-	display: inline-block;
-	width: 50%;
-	text-align: left;
-	border: #000 2px solid;
-	border-radius: 5px;
-	padding: 2%;
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  border: #000 2px solid;
+  border-radius: 5px;
+  padding: 2%;
 }
 /* Removes all text decoration */
 .nodeco {
-	text-decoration: none !important;
-	list-style: none;
+  text-decoration: none !important;
+  list-style: none;
 }
 /* Makes text align right */
 .right {
-	text-align: right;
+  text-align: right;
 }
 
 /* ■ ■ Responsive CSS ■ ■ */
@@ -166,7 +176,7 @@ input[type=button], input[type=submit], input[type=reset] {
   .cornertitle {
     width: 100%;
     text-align: center;
-		text-decoration: none;
+    text-decoration: none;
   }
   .phonespace {
     margin-top: 0rem;
@@ -174,17 +184,17 @@ input[type=button], input[type=submit], input[type=reset] {
     width: 1%;
     height: 0rem;
   }
-	.highlight {
-  	padding-left: 5px;
-  	padding-right: 5px;
-  	padding-top: 15px;
-  	padding-bottom: 15px;
-  	text-align: center;
-	}
-	.box {
+  .highlight {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .box {
   word-break: break-all;
-	width: 90%;
-	}
+  width: 90%;
+  }
 }
 
 /* ■ ■ Title Bar ■ ■ */
@@ -206,7 +216,7 @@ input[type=button], input[type=submit], input[type=reset] {
 .topbutton {
   float: right;
   text-align: right;
-	text-decoration: none;
+  text-decoration: none;
   width: 50%;
   padding-top: 10px;
 }
@@ -245,7 +255,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 /* Three columns */
 .column-3{
-	float: left;
+  float: left;
   width: 32%;
   text-align: center;
   padding-top: 30px;
@@ -253,7 +263,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 /* Four columns */
 .column-4{
-	float: left;
+  float: left;
   width: 25%;
   text-align: center;
   padding-top: 45px;
@@ -262,26 +272,26 @@ input[type=button], input[type=submit], input[type=reset] {
 
 /*  ■ ■ Responsive Columns ■ ■ */
 @media screen and (max-width: 600px) {
-	.row {
+  .row {
     display: block !important;
-	}
+  }
   .column-2 {
     width: 100%;
     padding: 0px 0;
     display: block !important;
-		height: auto;
+    height: auto;
   }
-	.column-3 {
+  .column-3 {
     width: 100%;
     padding: 0px 0;
     display: block !important;
-		height: auto;
-	}
-	.column-4 {
+    height: auto;
+  }
+  .column-4 {
     width: 100%;
     padding: 0px 0;
     display: block !important;
-		height: auto;
+    height: auto;
   }
 }
 
