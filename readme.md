@@ -8,7 +8,3 @@ Go to [css.jonahkc.com/get](https://css.jonahkc.com/get) to learn how to install
 
 ### Documentation
 Documentation is available at [css.jonahkc.com/docs](https://css.jonahkc.com/docs). There is also some brief explanation of what each class does in the file itself.
-
-
-
-
