@@ -1,4 +1,4 @@
-/* ■ ■ Version 1.0 ■ ■ */
+/* ■ ■ Version 1.1.0 ■ ■ */
 
 /* ■ ■ Font ■ ■ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
@@ -115,7 +115,7 @@ input[type=button], input[type=submit], input[type=reset] {
   width: 100%;
   height: 1rem;
 }
-/* Makes clear HR element that disappears on mobile */
+/* Makes clear hr element that disappears on mobile */
 .phonespace {
   background-color: transparent;
   border-color: transparent;
@@ -192,8 +192,69 @@ input[type=button], input[type=submit], input[type=reset] {
 .right {
   text-align: right;
 }
+/* Makes your content responsively 100% wide */
+.resp-100 {
+	width: 100%;
+}
+/* Makes your content responsively 50% wide */
+.resp-50 {
+	width: 50%;
+}
+/* Makes your content responsively 33% wide */
+.resp-33 {
+	width: 33%;
+}
+/* Makes parallax image behind your content */
+.parallax-div {
+	width: 100%;
+	min-height: 110vh !important;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+/* Make text fade in after 2 seconds */
+.fade-in-2 {
+  display: inline-block;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+/* Makes text fade in after 4 seconds */
+.fade-in-4 {
+  display: inline-block;
+  animation: fadeIn linear 4s;
+  -webkit-animation: fadeIn linear 4s;
+  -moz-animation: fadeIn linear 4s;
+  -o-animation: fadeIn linear 4s;
+  -ms-animation: fadeIn linear 4s;
+}
+/* Technical fade-y stuff */
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
-/* ■ ■ Responsive CSS ■ ■ */
+/* ■ ■ CSS That Changes On Mobile ■ ■ */
 
 @media screen and (max-width: 600px) {
   .cornertitle {
@@ -218,6 +279,15 @@ input[type=button], input[type=submit], input[type=reset] {
   word-break: break-all;
   width: 90%;
   }
+	.image-holder {
+	width: 100%; 
+	min-height: 110vh !important;
+	padding-top: 100px;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	}
 }
 
 /* ■ ■ Title Bar ■ ■ */
@@ -243,6 +313,49 @@ input[type=button], input[type=submit], input[type=reset] {
   width: 50%;
   padding-top: 10px;
 }
+
+/* Here's the CSS for a dropdown menu */
+
+/* Apply to the main button you hover over */
+.dropbtn {
+  background-color: var(--secondary);
+  color: var(--text);
+  padding: 16px;
+  font-size: 16px;
+	border: 3px solid var(--primary);
+	border-radius: 4px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: var(--text);
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--secondary);
+	border: 3px solid var(--primary);
+  color: var(--text);
+  border-radius: 4px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Styles links inside the dropdown */
+.dropdown-content a {
+  color: var(--text);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Changes color of dropdown links on hover */
+.dropdown-content a:hover {background-color: var(--primary);}
+/* Shows the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/* Changse the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: var(--primary);}
 
 /* ■ ■ Responsive Title Bar ■ ■ */
 

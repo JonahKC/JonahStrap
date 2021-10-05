@@ -32,24 +32,24 @@
 		<hr class="largeline">
 		<div class="highlight vertcenter-up" style="padding-top:100px; padding-bottom:100px; ">
 				<h1>Title Bar</h1>
-				<h4>Here's all CSS for setting up a top bar like the one on this site. If you're looking for the classes in the CSS file, they start at line 223.</h4>
+				<h4>Here's all CSS for setting up a top bar like the one on this site. If you're looking for the classes in the CSS file, they start at line 293.</h4>
 		</div>
 		<hr class="space">
 		<div class="highlight vertcenter-up">
-			<h2>.topbar</h2>
-			<p><b>.toptitle and .topbutton must go inside .topbar for the bar to work and the CSS to not spread to the rest of the page..</b></p>
+			<h2>.topbar, .toptitle, and .topbutton</h2>
+			<p><b>.toptitle and .topbutton must go inside .topbar for the bar to work and the CSS to not spread to the rest of the page.</b> .toptitle puts your page title in the top left corner, taking up 50% of screen width. .topbutton puts your links or buttons opposite to your title. Your HTML should look something like this:</p>
+			<div class="box">
+				<p>&lt;div class="topbar"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="toptitle"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;&lt;a class="nodeco" href="https://example.com"&gt;&lt;img&nbsp;src="image.png" alt="Logo" width="30" height="30"&gt;Name&lt;/a&gt;&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="topbutton"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;&lt;a class="nodeco" href="link"&gt;Your Link&lt;/a&gt;&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</br>&lt;/div&gt;</p>
+				</div>
 		</div>
 		<hr class="space">
 		<div class="highlight vertcenter-up">
-			<h2>.toptitle</h2>
-			<p>Puts your page title in the top left corner, taking up 50% of screen width.</p>
+			<h2>.dropdown, .dropbtn, .dropdown-content</h2>
+			<p><b>Everything must go inside .dropdown for the dropdown to work.</b> .dropbtn is the button you hover over. .dropdown-content is what the links go in. The HTML should look something like this:</p>
+			<div class="box">
+				<p>&lt;div&nbsp;class="dropdown"&gt;<br />&nbsp; &nbsp; &lt;button&nbsp;class="dropbtn"&gt;Dropdown&lt;/button&gt;<br />&nbsp; &nbsp; &lt;div&nbsp;class="dropdown-content"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;a&nbsp;href="Link"&gt;Name&lt;/a&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;a&nbsp;href="Link"&gt;Name&lt;/a&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;a&nbsp;href="Link"&gt;Name&lt;/a&gt;<br />&nbsp; &nbsp; &lt;/div&gt;<br />&lt;/div&gt;</p>
+				</div>
 		</div>
-		<hr class="space">
-		<div class="highlight vertcenter-up">
-			<h2>.topbutton</h2>
-			<p>Puts your links or buttons opposite to your title</p>
-		</div>
-		<hr class="largeline">
   </body>
 	<footer>
 		<img src="../jonahstrap.png" width="50px">
