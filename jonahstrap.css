@@ -1,4 +1,4 @@
-/* ■ ■ Version 1.1.0 ■ ■ */
+/* ■ ■ Version 1.2.0 ■ ■ */
 
 /* ■ ■ Font ■ ■ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
@@ -58,6 +58,12 @@ button {
 .button:hover {
   background-color: var(--primary);
 	transition: .5s;
+}
+table, th, td {
+  border: 3px solid var(--primary);
+  border-collapse: collapse;
+	border-radius: 5px !important;
+	background-color: var(--secondary);
 }
 /* ■ ■ Forms ■ ■ */
 
@@ -214,6 +220,7 @@ input[type=button], input[type=submit], input[type=reset] {
 	display: flex;
 	flex-direction: column;
 }
+
 /* Make text fade in after 2 seconds */
 .fade-in-2 {
   display: inline-block;
@@ -252,6 +259,34 @@ input[type=button], input[type=submit], input[type=reset] {
 @-ms-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
+}
+/* CSS for the text the tooltip goes on */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--text);
+	padding: 0 0 0 0;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--background);
+  color: var(--text);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* If you change this, use half of the width (for example, 120/2 = 60), to center the tooltip */
 }
 
 /* ■ ■ CSS That Changes On Mobile ■ ■ */
