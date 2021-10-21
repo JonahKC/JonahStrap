@@ -1,4 +1,4 @@
-/* ■ ■ Version 1.2.1 ■ ■ */
+/* ■ ■ Version 1.2.2 ■ ■ */
 
 /* ■ ■ Font ■ ■ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
@@ -8,8 +8,8 @@
 :root {
   --primary: #ff6600;
   --secondary: #ffc996;
-	--background: #ff7d32;
-	--text: #000000;
+  --background: #ff7d32;
+  --text: #000000;
 }
 
 /* ■ ■ Tag CSS ■ ■ */
@@ -57,13 +57,13 @@ button {
 }
 .button:hover {
   background-color: var(--primary);
-	transition: .5s;
+  transition: .5s;
 }
 table, th, td {
   border: 3px solid var(--primary);
   border-collapse: collapse;
-	border-radius: 5px !important;
-	background-color: var(--secondary);
+  border-radius: 5px !important;
+  background-color: var(--secondary);
 }
 /* ■ ■ Forms ■ ■ */
 
@@ -200,25 +200,25 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 /* Makes your content responsively 100% wide */
 .resp-100 {
-	width: 100%;
+  width: 100%;
 }
 /* Makes your content responsively 50% wide */
 .resp-50 {
-	width: 50%;
+  width: 50%;
 }
 /* Makes your content responsively 33% wide */
 .resp-33 {
-	width: 33%;
+  width: 33%;
 }
 /* Makes parallax image behind your content */
 .parallax-div {
-	width: 100%;
-	min-height: 110vh !important;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
+  width: 100%;
+  min-height: 110vh !important;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Make text fade in after 2 seconds */
@@ -265,7 +265,7 @@ input[type=button], input[type=submit], input[type=reset] {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted var(--text);
-	padding: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 /* Tooltip text */
 .tooltip .tooltiptext {
@@ -314,26 +314,26 @@ input[type=button], input[type=submit], input[type=reset] {
   word-break: break-all;
   width: 90%;
   }
-	.image-holder {
-	width: 100%; 
-	min-height: 110vh !important;
-	padding-top: 100px;
-	background-position: center center;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	}
+  .image-holder {
+  width: 100%; 
+  min-height: 110vh !important;
+  padding-top: 100px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  }
 
-	.parallax-div {
-	background-attachment: initial;
-	width: 100%; 
-	min-height: 110vh !important;
-	padding-top: 100px;
-	background-position: center center;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	}
+  .parallax-div {
+  background-attachment: initial;
+  width: 100%; 
+  min-height: 110vh !important;
+  padding-top: 100px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  }
 }
 
 /* ■ ■ Title Bar ■ ■ */
@@ -368,8 +368,8 @@ input[type=button], input[type=submit], input[type=reset] {
   color: var(--text);
   padding: 16px;
   font-size: 16px;
-	border: 3px solid var(--primary);
-	border-radius: 4px;
+  border: 3px solid var(--primary);
+  border-radius: 4px;
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -382,7 +382,7 @@ input[type=button], input[type=submit], input[type=reset] {
   display: none;
   position: absolute;
   background-color: var(--secondary);
-	border: 3px solid var(--primary);
+  border: 3px solid var(--primary);
   color: var(--text);
   border-radius: 4px;
   min-width: 160px;
