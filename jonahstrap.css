@@ -75,7 +75,10 @@ input[type=text], input[type=email], input[type=color], input[type=date], input[
   background-color: var(--secondary);
   color: var(--text);
   border-radius: 4px;
-
+	outline: none;
+}
+input:focus, textarea:focus, select:focus{
+	outline: none;
 }
 /* Submit button inputs */
 input[type=button], input[type=submit], input[type=reset] {
@@ -86,6 +89,7 @@ input[type=button], input[type=submit], input[type=reset] {
   padding: 5px 15px;
   text-decoration: none;
   margin: 4px 2px;
+	outline: none;
 }
 
 /* ■ ■ Fancy Classes ■ ■ */
