@@ -10,8 +10,8 @@
   --secondary: #ffc996;
   --background: #ff7d32;
   --text: #000000;
-	--mainfont: 'Nunito', sans-serif;
-	--altfont: 'Nunito', sans-serif;
+  --mainfont: 'Nunito', sans-serif;
+  --altfont: 'Nunito', sans-serif;
 }
 
 /* ■ ■ Tag CSS ■ ■ */
@@ -72,8 +72,8 @@ table, th, td {
 /* Text input */
 input[type=text], input[type=email], input[type=color], input[type=date], input[type=date], input[type=datetime-local], input[type=file], input[type=month], input[type=number], input[type=password], input[type=radio], input[type=range], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week], input[type=time] {
   border: 3px solid var(--primary);
-	background-color: var(--secondary);
-	color: var(--text);
+  background-color: var(--secondary);
+  color: var(--text);
   border-radius: 4px;
 
 }
@@ -351,7 +351,7 @@ input[type=button], input[type=submit], input[type=reset] {
 .toptitle {
   float: left;
   width: 50%;
-	  ont-family: var(--altfont);
+  font-family: var(--altfont);
 }
 /* Puts content opposite to your title */
 .topbutton {
@@ -360,7 +360,7 @@ input[type=button], input[type=submit], input[type=reset] {
   text-decoration: none;
   width: 50%;
   padding-top: 10px;
-	font-family: var(--altfont);
+  font-family: var(--altfont);
 }
 
 /* Here's the CSS for a dropdown menu */
