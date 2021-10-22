@@ -1,4 +1,4 @@
-/* ■ ■ Version 1.2.2 ■ ■ */
+/* ■ ■ JonahStrap v1.3.0 - css.jonahkc.com ■ ■ */
 
 /* ■ ■ Font ■ ■ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
@@ -10,13 +10,15 @@
   --secondary: #ffc996;
   --background: #ff7d32;
   --text: #000000;
+	--mainfont: 'Nunito', sans-serif;
+	--altfont: 'Nunito', sans-serif;
 }
 
 /* ■ ■ Tag CSS ■ ■ */
 
 /* Font, margins, background and text color */
 html {
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--mainfont);
   margin-left: 25px;
   margin-right: 25px;
   background-color: var(--background);
@@ -68,14 +70,12 @@ table, th, td {
 /* ■ ■ Forms ■ ■ */
 
 /* Text input */
-input[type=text] {
+input[type=text], input[type=email], input[type=color], input[type=date], input[type=date], input[type=datetime-local], input[type=file], input[type=month], input[type=number], input[type=password], input[type=radio], input[type=range], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week], input[type=time] {
   border: 3px solid var(--primary);
+	background-color: var(--secondary);
+	color: var(--text);
   border-radius: 4px;
-}
-/* Email input */
-input[type=email] {
-  border: 3px solid var(--primary);
-  border-radius: 4px;
+
 }
 /* Submit button inputs */
 input[type=button], input[type=submit], input[type=reset] {
@@ -86,7 +86,6 @@ input[type=button], input[type=submit], input[type=reset] {
   padding: 5px 15px;
   text-decoration: none;
   margin: 4px 2px;
-
 }
 
 /* ■ ■ Fancy Classes ■ ■ */
@@ -164,11 +163,13 @@ input[type=button], input[type=submit], input[type=reset] {
 .title {
   text-decoration: none;
   font-size: 3rem;
+  font-family: var(--altfont);
 }
 /* Makes text 2x size */
 .subtitle {
   text-decoration: none;
   font-size: 2rem;
+  font-family: var(--altfont);
 }
 /* Gives content an accented background color and some padding, and centers everything inside */
 .highlight {
@@ -350,6 +351,7 @@ input[type=button], input[type=submit], input[type=reset] {
 .toptitle {
   float: left;
   width: 50%;
+	  ont-family: var(--altfont);
 }
 /* Puts content opposite to your title */
 .topbutton {
@@ -358,6 +360,7 @@ input[type=button], input[type=submit], input[type=reset] {
   text-decoration: none;
   width: 50%;
   padding-top: 10px;
+	font-family: var(--altfont);
 }
 
 /* Here's the CSS for a dropdown menu */
