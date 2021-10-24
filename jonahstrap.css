@@ -1,4 +1,4 @@
-/* ■ ■ JonahStrap v1.2.1 - css.jonahkc.com ■ ■ */
+/* ■ ■ JonahStrap v1.2.2 - css.jonahkc.com ■ ■ */
 
 /* ■ ■ Font ■ ■ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
@@ -56,10 +56,15 @@ button {
   padding: 5px 15px;
   text-decoration: none;
   margin: 4px 2px;
+  outline: none;
 }
 .button:hover {
   background-color: var(--primary);
   transition: .5s;
+  outline: none;
+}
+button:focus{
+  outline: none;
 }
 table, th, td {
   border: 3px solid var(--primary);
@@ -75,10 +80,10 @@ input[type=text], input[type=email], input[type=color], input[type=date], input[
   background-color: var(--secondary);
   color: var(--text);
   border-radius: 4px;
-	outline: none;
+  outline: none;
 }
 input:focus, textarea:focus, select:focus{
-	outline: none;
+  outline: none;
 }
 /* Submit button inputs */
 input[type=button], input[type=submit], input[type=reset] {
@@ -89,7 +94,7 @@ input[type=button], input[type=submit], input[type=reset] {
   padding: 5px 15px;
   text-decoration: none;
   margin: 4px 2px;
-	outline: none;
+  outline: none;
 }
 
 /* ■ ■ Fancy Classes ■ ■ */
