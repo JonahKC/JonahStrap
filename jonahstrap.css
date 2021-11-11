@@ -1,4 +1,4 @@
-/* ■ ■ JonahStrap v1.2.2 - css.jonahkc.com ■ ■ */
+/* ■ ■ JonahStrap v1.2.3 - css.jonahkc.com ■ ■ */
 
 /* ■ ■ Font ■ ■ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
@@ -80,6 +80,10 @@ input[type=text], input[type=email], input[type=color], input[type=date], input[
   background-color: var(--secondary);
   color: var(--text);
   border-radius: 4px;
+  outline: none;
+}
+input[type=text]::placeholder, input[type=email]::placeholder, input[type=color]::placeholder, input[type=date]::placeholder, input[type=date]::placeholder, input[type=datetime-local]::placeholder, input[type=file]::placeholder, input[type=month]::placeholder, input[type=number]::placeholder, input[type=password]::placeholder, input[type=radio]::placeholder, input[type=range]::placeholder, input[type=search]::placeholder, input[type=tel]::placeholder, input[type=time]::placeholder, input[type=url]::placeholder, input[type=week]::placeholder, input[type=time]::placeholder {
+  color: var(--text);
   outline: none;
 }
 input:focus, textarea:focus, select:focus{
