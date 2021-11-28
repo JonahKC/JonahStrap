@@ -247,7 +247,34 @@ input[type=button], input[type=submit], input[type=reset] {
   margin: 4px 2px;
   outline: none;
 }
-
+/* Sliders */
+input[type=slider] {
+	-webkit-appearance: none;
+  appearance: none;
+  width: 300px;
+  height: 20px;
+  background: var(--secondary);
+  outline: none;
+  opacity: 0.7;
+	border: 3px solid var(--primary);
+	border-radius: 4px;
+}
+input[type=slider]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  background: var(--primary);
+  cursor: pointer;
+	border-radius: 50%;
+}
+input[type=slider]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  background: var(--primary);
+  cursor: pointer;
+	border-radius: 50%;
+}
 /* ■ ■ Fancy Classes ■ ■ */
 
 /* Centers content */
