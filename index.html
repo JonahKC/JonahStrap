@@ -1,5 +1,3 @@
-<!-- my html is so messy dont judge me pls -->
-
 <!DOCTYPE html>
 	<head>
 		<title>JonahStrap • The greatest CSS library ever made by Jonah</title>
@@ -22,58 +20,43 @@
 	  <link rel="icon" href="jonahstrap.png">
 	  <link rel="canonical" href="https://css.jonahkc.com/">
     <link rel="stylesheet" type="text/css" href="jonahstrap.css" media="screen">
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SSQBS7JPP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-9SSQBS7JPP');
-		</script>
 	</head>
   <body>
-		<div class="topbar">
-			<div class="toptitle">
-				<h1><a class="nodeco" href="https://css.jonahkc.com"><img class="logo" src="jonahstrap.png" alt="Logo" width="30" height="30"> JonahStrap</a></h1>
-	    </div>
-		  <div class="topbutton">
-	      <h2><a class="nodeco" href="get">Get JonahStrap</a> • <a class="nodeco" href="docs">Docs</a></h2>
-	    </div>
-	  </div>
-		<hr class="largeline">
-		<div class="highlight vertcenter-side row" style="padding-top:100px; padding-bottom:100px; ">
-			
-			<div class="column-3">
-				<h1>JonahStrap
-					<br><br>
-				  	<a href="get"><button class="learn-more fancybutton1">
-    					<span class="circle fancybutton1" aria-hidden="true">
-      					<span class="icon arrow fancybutton1"></span>
-    					</span>
-    					<span class="button-text fancybutton1">Get Started</span>
-  					</button></a>
-						<a href="docs"><button class="learn-more fancybutton1">
-    					<span class="circle fancybutton1" aria-hidden="true">
-      					<span class="icon arrow fancybutton1"></span>
-    					</span>
-    					<span class="button-text fancybutton1">Read the Docs</span>
-  					</button></a>
-				</h1>
-			</div>
-			<div class="column-3">
-				<h4>Quickly design and customize responsive mobile-friendly sites with JonahStrap, the world’s most popular front-end open source toolkit built by Jonah. Far superior to Bootstrap and every other CSS library, JonahStrap is the greatest CSS library ever made (by Jonah). It has the go-to default CSS he uses on the websites he builds.<br><br></h4>
-			</div>
-			<div class="column-3">
-				<img src="jonahstrap.png" width="190px" height="190px">
-			</div>
-		</div>
-		<hr class="largeline">
+    <div class="flex up center section" style="min-height:100vh">
+      <div class="flex wrap center">
+        <div class="tile" style="width:40vw; padding-right:30px;">
+          <h1 class="textcenter">JonahStrap</h1>
+          <p>Quickly design and customize responsive mobile-friendly sites with JonahStrap, the world’s most popular front-end open source toolkit built by Jonah. Far superior to Bootstrap and every other CSS library, JonahStrap is the greatest CSS library ever made (by Jonah). It has the go-to default CSS he uses on the websites he builds.<br><br><b>Click the logo to download!</b>
+  </p>
+        </div>
+        <a href="/jonahstrap.css" download="jonahstrap.css"><img src="jonahstrap.png" style="height:300px;height:300px;" alt="jonahstrap logo" id="download"></a>
+      </div>
+      <style>
+        /* I don't want to make the animation part of the library ok */
+        #download {
+          text-decoration: none;
+          font-size: 2rem;
+          margin-top:50px;
+          animation: scale 2s ease-in-out infinite;
+            -webkit-animation: scale 2s ease-in-out infinite;
+        }
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% { 
+                transform: scale(1);
+            }
+        }
+      </style>
+    </div>
+    <div class="flex up center" style="background-color: rgba(255,255,255,.1); padding-top:20px;">
+      <a href="css.jonahkc.com"><img src="jonahstrap.png" width="50px" height="50px"></a>
+      <p>Made by <a href="https://jonahkc.com">Jonah</a></p>
+    </div>
+    
   </body>
-	<footer>
-		<img src="jonahstrap.png" width="50px">
-		<p class="footertext">
-			Made by <a href="https://jonahkc.com">jonahkc.com</a>.<br>
-		</p>
-	</footer>
 </html>
